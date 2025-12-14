@@ -1,12 +1,13 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #000000;
+  --foreground: #ffffff;
   --teal: #006f87;
   --teal-dark: #005a6e;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -24,12 +25,13 @@
 
 body {
   margin: 0;
-  background: var(--background);
+  background: #000000;
   color: var(--foreground);
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 #root {
   min-height: 100vh;
@@ -46,28 +48,11 @@ h6,
 }
 
 @layer utilities {
-  .glass {
-    @apply border border-white/20 bg-white/70 shadow-xl backdrop-blur-md;
-  }
-
-  .glass-card {
-    @apply border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-xl;
-  }
-
-  .glass-nav {
-    @apply sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-lg;
-  }
-
-  .glass-hover-shine {
-    @apply relative overflow-hidden after:absolute after:inset-0 after:bg-linear-to-tr after:from-white/0 after:via-white/20 after:to-white/0 after:translate-x-[-100%] after:transition-transform after:duration-1000 hover:after:translate-x-[100%];
-  }
-
   @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translateY(20px);
     }
-
     to {
       opacity: 1;
       transform: translateY(0);
@@ -79,7 +64,6 @@ h6,
       opacity: 0;
       transform: translateX(30px);
     }
-
     to {
       opacity: 1;
       transform: translateX(0);
@@ -91,34 +75,100 @@ h6,
       opacity: 0;
       transform: scale(0.95);
     }
-
     to {
       opacity: 1;
       transform: scale(1);
     }
   }
 
-  .animate-fade-in-up {
-    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  @keyframes mesh {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
-  .animate-slide-in-right {
-    animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 
-  .animate-scale-in {
-    animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-
-  .stagger-1 {
-    animation-delay: 0.1s;
-  }
-
-  .stagger-2 {
-    animation-delay: 0.2s;
-  }
-
-  .stagger-3 {
-    animation-delay: 0.3s;
+  @keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
   }
 }
+
+/* Custom Utilities (Tailwind v4 Top-level) */
+@utility glass {
+  @apply border border-white/10 bg-black/40 shadow-xl backdrop-blur-xl;
+}
+
+@utility glass-premium {
+  @apply border border-white/20 bg-white/5 shadow-2xl backdrop-blur-[40px] ring-1 ring-white/10;
+}
+
+@utility glass-ultra {
+  @apply border border-white/30 bg-black/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-[60px] ring-1 ring-white/20;
+}
+
+@utility shadow-glow {
+  box-shadow: 0 0 20px rgba(0, 111, 135, 0.3), 0 0 40px rgba(0, 111, 135, 0.1);
+}
+
+@utility glass-card {
+  @apply border border-white/5 bg-white/5 shadow-sm transition-all duration-300 hover:shadow-glow;
+}
+
+@utility glass-nav {
+  @apply border border-white/10 bg-black/60 shadow-2xl backdrop-blur-[40px] ring-1 ring-white/5;
+}
+
+@utility glass-hover-shine {
+  @apply relative overflow-hidden after:absolute after:inset-0 after:bg-linear-to-tr after:from-white/0 after:via-white/10 after:to-white/0 after:translate-x-[-100%] after:transition-transform after:duration-1000 hover:after:translate-x-[100%];
+}
+
+@utility bg-circuit {
+  background-image: url('file:///C:/Users/User/.gemini/antigravity/brain/4f9404ce-7d06-4798-8b0c-0b0dbe2e411f/hero_circuit_bg_1773093733201.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@utility bg-ultra-mesh {
+  background: radial-gradient(circle at top right, #001f26, #000000 80%),
+              radial-gradient(circle at bottom left, #00151a, #000000 80%);
+  background-color: #000000;
+}
+
+@utility animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility animate-slide-in-right {
+  animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility animate-scale-in {
+  animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility animate-scroll-left {
+  animation: scrollLeft 80s linear infinite;
+}
+
+@utility animate-scroll-right {
+  animation: scrollRight 80s linear infinite;
+}
+
+@utility stagger-1 {
+  animation-delay: 0.1s;
+}
+
+@utility stagger-2 {
+  animation-delay: 0.2s;
+}
+
+@utility stagger-3 {
+  animation-delay: 0.3s;
+}
+
