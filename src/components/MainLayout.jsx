@@ -4,9 +4,9 @@ import TawkToWidget from "./TawkToWidget";
 
 export default function MainLayout({ children }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="bg-ultra-mesh relative min-h-screen overflow-x-hidden text-white transition-colors duration-500">
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main className="relative z-10 flex-grow">{children}</main>
       <Footer />
       <TawkToWidget />
     </div>
