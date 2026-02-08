@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ENKRYX Website
 
-## Getting Started
+A complete, production-ready website for the startup **ENKRYX**, built with Next.js 16, Tailwind CSS 4, and curated for maximum performance and professional aesthetics.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 16 + App Router**: Latest stable framework features.
+- **Tailwind CSS 4**: Modern, high-performance styling.
+- **Responsive Design**: Mobile-first approach for all devices.
+- **SEO Optimized**: Dynamic `sitemap.xml`, `robots.txt`, and comprehensive metadata.
+- **Third-Party Integrations**:
+  - **EmailJS**: Seamless contact form handling.
+  - **WhatsApp**: Direct click-to-chat integration.
+  - **Tawk.to**: Live chat widget.
+- **Data-Driven**: Easily update projects, services, and team via `src/data/siteData.json`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Extract the project**: Ensure all files are in your development directory.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Run locally**:
+    ```bash
+    npm run dev
+    ```
+4.  **Visit**: [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment to Vercel
 
-## Learn More
+1.  Push your code to a GitHub repository.
+2.  Import the project in [Vercel](https://vercel.com).
+3.  Add the following **Environment Variables**:
+    - `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
+    - `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
+    - `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
+    - `NEXT_PUBLIC_TAWK_PROPERTY_ID`
+    - `NEXT_PUBLIC_TAWK_WIDGET_ID`
+    - `NEXT_PUBLIC_WHATSAPP_NUMBER` (Include country code, e.g., `1234567890`)
+4.  Click **Deploy**.
 
-To learn more about Next.js, take a look at the following resources:
+## Configuration & Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Updating Content
+Edit `src/data/siteData.json` to modify:
+- **Services**: Description, timeline, and icons.
+- **Portfolio**: Projects, summaries, and details.
+- **Team**: Members, roles, and bios.
+- **Testimonials**: Quotes and authors.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Replacing Images
+Place your optimized images in `/public/images/`:
+- **Logo**: `logo.webp` (Update `Header.tsx` if name differs).
+- **Team**: `team1.webp`, `team2.webp`, etc.
+- **Portfolio**: `portfolio1.webp`, `portfolio2.webp`, etc.
+*Note: Recommended format is WebP. Hero images should be max 1600px wide, team photos 300x300px.*
 
-## Deploy on Vercel
+### Tawk.to Setup
+Update `src/components/TawkToWidget.tsx` with your Property and Widget IDs or use the environment variables mentioned above.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Verification Checklist
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] **Form Submission**: Test the contact form and verify EmailJS receives the message.
+- [ ] **WhatsApp Link**: Ensure the WhatsApp button opens correctly.
+- [ ] **Live Chat**: Confirm the Tawk.to widget appears on all pages.
+- [ ] **Responsiveness**: Check mobile, tablet, and desktop views.
+- [ ] **Performance**: Run Lighthouse; target score > 85 on mobile.
+
+## Built by Antigravity — ENKRYX Software & Web Solutions

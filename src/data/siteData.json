@@ -1,0 +1,111 @@
+{
+  "services": [
+    {
+      "id": "web-dev",
+      "title": "Web Development",
+      "problem": "Generic websites fail to convert visitors into customers.",
+      "solution": "We build custom, high-performance web applications tailored to your business goals.",
+      "icon": "globe"
+    },
+    {
+      "id": "software-sys",
+      "title": "Software Systems",
+      "problem": "Manual processes slow down your growth and cause errors.",
+      "solution": "Automate your workflow with custom software systems designed for efficiency.",
+      "icon": "cpu"
+    },
+    {
+      "id": "ui-ux",
+      "title": "UI/UX Design",
+      "problem": "Poor user experience drives users away from your platform.",
+      "solution": "We create intuitive, beautiful interfaces that keep users engaged and happy.",
+      "icon": "palette"
+    }
+  ],
+  "team": [
+    {
+      "name": "Abdullah Al Noman Khan",
+      "role": "Co-Founder, Product & Engineering",
+      "bio": "Focused on system structure, architecture, and practical solutions. Works on turning ideas into stable and scalable products.",
+      "image": "/images/noman.png",
+      "socials": {
+        "facebook": "https://www.facebook.com/md.noman.blz/",
+        "linkedin": "https://www.linkedin.com/in/noman1922",
+        "github": "https://github.com/noman1922",
+        "portfolio": "https://noman1922.github.io/Portfolio"
+      }
+    },
+    {
+      "name": "Md.Junaid Hossain",
+      "role": "Co-Founder, Application Development",
+      "bio": "Builds application features and handles implementation across modern web technologies. Focused on clean and reliable execution.",
+      "image": "/images/junaid.png",
+      "socials": {
+        "facebook": "https://www.facebook.com/junaid.hossain.33821",
+        "linkedin": "https://www.linkedin.com/in/md-junaid-hossain-dev/",
+        "github": "https://github.com/Junaid8217",
+        "portfolio": "https://github.com/Junaid8217"
+      }
+    },
+    {
+      "name": "Raisul Islam Rifat",
+      "role": "Co-Founder, Design & Research",
+      "bio": "Works on understanding user needs and shaping product experience through thoughtful design and research driven decisions.",
+      "image": "/images/raisul.png",
+      "socials": {
+        "facebook": "https://www.facebook.com/raisulislam.rifat.792",
+        "linkedin": "https://www.linkedin.com/in/raisul-islam-rifat-6075b3292/",
+        "github": "https://github.com/Rasiul",
+        "portfolio": "https://github.com/Rasiul"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Ticket Management System",
+      "summary": "Issue tracking and support request management platform.",
+      "image": "/images/ticket.png",
+      "details": "A web based system to manage support tickets, assign tasks and track resolution progress. Built for teams to organize client requests and internal workflow efficiently.",
+      "liveUrl": "https://ticket-management-system-dusky.vercel.app/"
+    },
+    {
+      "id": "project-2",
+      "title": "EcomStack",
+      "summary": "Modern e-commerce platform with admin control panel including POS.",
+      "image": "/images/ecomstack.png",
+      "details": "Full stack e-commerce solution including product management, cart system, order handling and admin dashboard. Designed for scalable online business operations.",
+      "liveUrl": "https://ecom-stack-five.vercel.app/"
+    },
+    {
+      "id": "project-3",
+      "title": "Restaurant Management System",
+      "summary": "Ordering, billing and operational management software.",
+      "image": "/images/restaurant.png",
+      "details": "Handles menu control, orders, billing and daily records through a centralized dashboard to simplify restaurant workflow.",
+      "liveUrl": "#"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "They understood our requirement clearly and built exactly what we needed without unnecessary complexity.",
+      "author": "Restaurant Owner",
+      "company": "Local Business Client"
+    },
+    {
+      "quote": "Communication was smooth and changes were handled quickly. The system made our daily work much easier.",
+      "author": "Consultancy Manager",
+      "company": "Student Consultancy Service"
+    },
+    {
+      "quote": "Clean interface and stable performance. Everything works as expected which is rare these days.",
+      "author": "Small Business Owner",
+      "company": "Retail Business"
+    },
+    {
+      "quote": "Support after delivery was very helpful. They didn’t just finish the project and disappear.",
+      "author": "Startup Founder",
+      "company": "Private Client"
+    }
+  ]
+}
