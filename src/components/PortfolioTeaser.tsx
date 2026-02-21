@@ -12,9 +12,9 @@ export default function PortfolioTeaser() {
                         A glimpse into the systems we've built.
                     </p>
                 </div>
-                <div className="mx-auto mt-20 grid grid-cols-1 gap-x-12 gap-y-16 lg:grid-cols-2">
-                    {data.projects.slice(0, 2).map((project, index) => (
-                        <div key={project.id} className={`group glass-card glass-hover-shine relative overflow-hidden rounded-[2.5rem] transition-all hover:scale-[1.02] opacity-0 animate-fade-in-up stagger-${(index % 2) + 1}`}>
+                <div className="mx-auto mt-20 grid grid-cols-1 gap-x-12 gap-y-16 lg:grid-cols-3">
+                    {data.projects.slice(0, 3).map((project, index) => (
+                        <div key={project.id} className={`group glass-card glass-hover-shine relative overflow-hidden rounded-[2.5rem] transition-all hover:scale-[1.02] opacity-0 animate-fade-in-up stagger-${(index % 3) + 1}`}>
                             <Link href={project.liveUrl || "#"} target={project.liveUrl !== "#" ? "_blank" : undefined} className={project.liveUrl === "#" ? "cursor-default" : ""}>
                                 <div className="aspect-[16/10] w-full bg-gray-100 overflow-hidden relative border-b border-black/5">
                                     <Image
@@ -35,6 +35,15 @@ export default function PortfolioTeaser() {
                             </Link>
                         </div>
                     ))}
+                </div>
+
+                <div className="mt-20 text-center opacity-0 animate-fade-in-up stagger-3">
+                    <Link
+                        href="/portfolio"
+                        className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-teal hover:scale-105 active:scale-95 shadow-xl"
+                    >
+                        View All Projects
+                    </Link>
                 </div>
             </div>
         </section>

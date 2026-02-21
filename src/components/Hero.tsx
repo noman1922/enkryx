@@ -25,7 +25,7 @@ export default function Hero() {
                         </span>
                         <span className="uppercase tracking-widest text-[10px]">Now accepting new projects</span>
                     </div>
-                    <h1 className="text-5xl font-bold tracking-tight text-white sm:text-8xl italic uppercase leading-[0.9] tracking-tighter opacity-0 animate-fade-in-up stagger-2">
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-7xl lg:text-8xl italic uppercase leading-[0.9] tracking-tighter opacity-0 animate-fade-in-up stagger-2">
                         Your idea deserves a <span className="text-teal">proper</span> system.
                     </h1>
                     <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl opacity-0 animate-fade-in-up stagger-3">

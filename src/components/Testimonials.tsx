@@ -1,4 +1,5 @@
 import data from "@/data/siteData.json";
+import Image from "next/image";
 
 export default function Testimonials() {
     return (
@@ -16,14 +17,14 @@ export default function Testimonials() {
                         Trust is built through results. Here is what industry leaders have to say.
                     </p>
                 </div>
-                <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {data.testimonials.map((testimonial, index) => (
                         <div key={index} className="glass-card glass-hover-shine flex flex-col rounded-[2.5rem] p-12 transition-all hover:scale-[1.01]">
                             <blockquote className="flex-grow text-2xl font-medium leading-relaxed text-black tracking-tight">
                                 &ldquo;{testimonial.quote}&rdquo;
                             </blockquote>
                             <div className="mt-10 flex items-center gap-x-6 border-t border-black/5 pt-8">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white font-bold text-lg">
+                                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-black text-white font-bold text-xl shadow-lg border-2 border-teal/20 uppercase">
                                     {testimonial.author.charAt(0)}
                                 </div>
                                 <div className="text-sm leading-6">

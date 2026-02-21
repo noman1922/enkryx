@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-import TawkChat from "@/components/TawkChat";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({
   children,
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
       <body className="antialiased font-inter">
         {children}
-        <TawkChat />
+        <WhatsAppButton />
       </body>
     </html>
   );

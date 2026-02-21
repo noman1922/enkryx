@@ -1,25 +1,32 @@
 {
   "services": [
     {
-      "id": "web-dev",
-      "title": "Web Development",
+      "id": "custom-web",
+      "title": "Custom Web Development",
       "problem": "Generic websites fail to convert visitors into customers.",
-      "solution": "We build custom, high-performance web applications tailored to your business goals.",
+      "solution": "We build high-performance custom websites fully tailored to your business needs. Conversion-focused, scalable, and built with modern frameworks to ensure your brand stands out.",
       "icon": "globe"
     },
     {
-      "id": "software-sys",
-      "title": "Software Systems",
-      "problem": "Manual processes slow down your growth and cause errors.",
-      "solution": "Automate your workflow with custom software systems designed for efficiency.",
-      "icon": "cpu"
+      "id": "saas-dev",
+      "title": "SaaS Product Development",
+      "problem": "Manual processes and disjointed tools cap your growth potential.",
+      "solution": "End-to-end SaaS platforms with secure cloud-based solutions. We build admin dashboards, user roles, and subscription systems that scale as your user base grows.",
+      "icon": "layers"
     },
     {
-      "id": "ui-ux",
-      "title": "UI/UX Design",
-      "problem": "Poor user experience drives users away from your platform.",
-      "solution": "We create intuitive, beautiful interfaces that keep users engaged and happy.",
-      "icon": "palette"
+      "id": "wordpress-sol",
+      "title": "WordPress Solutions",
+      "problem": "Clunky, slow sites make management a nightmare and kill SEO.",
+      "solution": "Custom WordPress websites with professional theme customization and plugin development. Easy to manage, SEO optimized, and built for long-term reliability.",
+      "icon": "layout"
+    },
+    {
+      "id": "mobile-app",
+      "title": "Mobile App Development",
+      "problem": "Being desktop-only means missing over half of your potential market.",
+      "solution": "Cross-platform apps (Android & iOS) that deliver high performance and clean UI. From business apps to SaaS mobile versions, we keep your business in your customers' pockets.",
+      "icon": "smartphone"
     }
   ],
   "team": [
@@ -44,7 +51,7 @@
         "facebook": "https://www.facebook.com/junaid.hossain.33821",
         "linkedin": "https://www.linkedin.com/in/md-junaid-hossain-dev/",
         "github": "https://github.com/Junaid8217",
-        "portfolio": "https://github.com/Junaid8217"
+        "portfolio": "https://luminous-gecko-ece699.netlify.app/"
       }
     },
     {
@@ -58,11 +65,39 @@
         "github": "https://github.com/Rasiul",
         "portfolio": "https://github.com/Rasiul"
       }
+    },
+    {
+      "name": "Md Marajus Salehin Anim",
+      "role": "Project Manager",
+      "bio": "Focused on structured execution, system planning, and practical implementation.",
+      "image": "/images/anim.png",
+      "socials": {
+        "facebook": "https://www.facebook.com/maraj.net",
+        "linkedin": "https://www.linkedin.com/in/marajanim/",
+        "github": "https://github.com/marajanim",
+        "portfolio": "https://www.maraj.net/"
+      }
     }
   ],
   "projects": [
     {
       "id": "project-1",
+      "title": "SinoGems BD",
+      "summary": "E-commerce platform for electronic accessories and gadgets.",
+      "image": "/images/s.png",
+      "details": "A modern e-commerce platform developed for selling electronic accessories across Bangladesh. Includes product categorization, promotional campaigns, cart system, secure checkout flow, and order management features. Built for performance, scalability, and high conversion.",
+      "liveUrl": "https://sinogemsbd.com"
+    },
+    {
+      "id": "project-2",
+      "title": "ToffeeToons Academy",
+      "summary": "Online animation learning and enrollment platform.",
+      "image": "/images/to.png",
+      "details": "A digital education platform created for a 2D animation academy. Features course promotion, student enrollment system, authentication, and structured content pages. Designed to simplify admissions and attract new learners.",
+      "liveUrl": "https://toffeetoonsacademy.com"
+    },
+    {
+      "id": "project-3",
       "title": "Ticket Management System",
       "summary": "Issue tracking and support request management platform.",
       "image": "/images/ticket.png",
@@ -70,7 +105,39 @@
       "liveUrl": "https://ticket-management-system-dusky.vercel.app/"
     },
     {
-      "id": "project-2",
+      "id": "project-4",
+      "title": "Nachtgrund",
+      "summary": "Premium German streetwear e-commerce store.",
+      "image": "/images/n.png",
+      "details": "A high-end fashion e-commerce website built for a German streetwear brand. Includes product collections, subscription integration, modern UI styling, and international shopping capability. Focused on branding, aesthetics, and smooth user experience.",
+      "liveUrl": "https://www.nachtgrund.com/"
+    },
+    {
+      "id": "project-5",
+      "title": "Legend Sports Pro",
+      "summary": "Sports gear e-commerce platform with custom product features.",
+      "image": "/images/le.png",
+      "details": "An advanced e-commerce platform for sports equipment and custom gloves. Includes product showcase sections, brand navigation, promotional banners, and custom configuration options. Built for performance, usability, and brand engagement.",
+      "liveUrl": "https://legendsportspro.com/"
+    },
+    {
+      "id": "project-6",
+      "title": "Think Socialism Network",
+      "summary": "Community-driven membership platform.",
+      "image": "/images/th.png",
+      "details": "A structured community platform designed to connect members globally. Features login system, content pages, membership interaction, and scalable navigation architecture. Built to support engagement and organized content delivery.",
+      "liveUrl": "https://thinksocialism.net/"
+    },
+    {
+      "id": "project-7",
+      "title": "Gentle Journey Home Care LLC",
+      "summary": "Healthcare service company website.",
+      "image": "/images/ge.png",
+      "details": "A professional healthcare service website designed to build trust and credibility. Highlights services, contact accessibility, and brand identity while maintaining a clean and approachable interface. Built for conversion and clarity.",
+      "liveUrl": "https://gentlejourneyhcllc.com/"
+    },
+    {
+      "id": "project-8",
       "title": "EcomStack",
       "summary": "Modern e-commerce platform with admin control panel including POS.",
       "image": "/images/ecomstack.png",
@@ -78,34 +145,48 @@
       "liveUrl": "https://ecom-stack-five.vercel.app/"
     },
     {
-      "id": "project-3",
+      "id": "project-9",
       "title": "Restaurant Management System",
       "summary": "Ordering, billing and operational management software.",
       "image": "/images/restaurant.png",
       "details": "Handles menu control, orders, billing and daily records through a centralized dashboard to simplify restaurant workflow.",
       "liveUrl": "#"
+    },
+    {
+      "id": "project-10",
+      "title": "PawMart",
+      "summary": "Modern e-commerce platform for pet products.",
+      "image": "/images/p.png",
+      "details": "A responsive e-commerce platform built for selling premium pet products. Includes product listings, shopping cart system, user authentication, and promotional hero sections. Designed with a friendly UI and smooth browsing experience for pet owners.",
+      "liveUrl": "https://eloquent-gnome-9281de.netlify.app/"
+    },
+    {
+      "id": "project-11",
+      "title": "BloodDonate",
+      "summary": "Community-based blood donation management platform.",
+      "image": "/images/b.png",
+      "details": "A web platform designed to connect blood donors with recipients. Features donor registration, blood request system, authentication, and awareness content sections. Built to support real-time community engagement and structured data management.",
+      "liveUrl": "https://unique-bublanina-9b3ac2.netlify.app/"
     }
   ],
   "testimonials": [
     {
-      "quote": "They understood our requirement clearly and built exactly what we needed without unnecessary complexity.",
-      "author": "Restaurant Owner",
-      "company": "Local Business Client"
+      "quote": "Our e-commerce platform now runs smoothly and handles orders without issues. The structure is clean and customers find it easy to navigate.",
+      "author": "Operations Manager",
+      "company": "SinoGems BD",
+      "image": "/images/1.png"
     },
     {
-      "quote": "Communication was smooth and changes were handled quickly. The system made our daily work much easier.",
-      "author": "Consultancy Manager",
-      "company": "Student Consultancy Service"
+      "quote": "The website perfectly reflects our brand identity. Enrollment became much easier and we are getting more student inquiries than before.",
+      "author": "Director",
+      "company": "ToffeeToons Academy",
+      "image": "/images/2.png"
     },
     {
-      "quote": "Clean interface and stable performance. Everything works as expected which is rare these days.",
-      "author": "Small Business Owner",
-      "company": "Retail Business"
-    },
-    {
-      "quote": "Support after delivery was very helpful. They didn’t just finish the project and disappear.",
-      "author": "Startup Founder",
-      "company": "Private Client"
+      "quote": "They delivered a premium online store that matches our streetwear brand image. Performance and design both met our expectations.",
+      "author": "Brand Owner",
+      "company": "Nachtgrund",
+      "image": "/images/3.png"
     }
   ]
 }

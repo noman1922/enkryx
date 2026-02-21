@@ -13,8 +13,8 @@ export default function TeamTeaser() {
                         Expert minds dedicated to building your vision.
                     </p>
                 </div>
-                <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {data.team.slice(0, 3).map((member, index) => (
+                <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                    {data.team.slice(0, 4).map((member, index) => (
                         <div key={member.name} className={`glass-card glass-hover-shine group relative flex flex-col overflow-hidden rounded-[2rem] transition-all pt-10 hover:scale-[1.02] opacity-0 animate-fade-in-up stagger-${(index % 3) + 1}`}>
                             <Link href="/team" className="flex flex-col items-center px-8 pb-8">
                                 <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-teal shadow-xl transition-transform duration-500 group-hover:scale-110">
