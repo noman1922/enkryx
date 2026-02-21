@@ -3,8 +3,8 @@
 A high-performance, secure, and visually stunning agency website built with **Next.js 15**, **Tailwind CSS 4**, and **Lucide Icons**. Featuring a premium glassmorphic design and integrated communication tools.
 
 ### 🔗 Live Links
-- **Official Website (Vercel):** [https://enkryx.vercel.app/](https://enkryx.vercel.app/)
-- **WhatsApp Support:** [Chat on WhatsApp](https://wa.me/8801400019228)
+- Official Website: https://enkryx.com/
+
 
 ---
 
