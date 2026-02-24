@@ -63,7 +63,7 @@ export default function Footer() {
                         <ul className="mt-6 space-y-4">
                             <li className="flex items-center gap-3 text-sm text-gray-500">
                                 <Mail size={16} className="text-teal" />
-                                <span>enkrtx@gmail.com</span>
+                                <span>info@enkryx.com</span>
                             </li>
                             <li className="flex items-center gap-3 text-sm text-gray-500">
                                 <Phone size={16} className="text-teal" />
