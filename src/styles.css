@@ -25,7 +25,13 @@
 
 body {
   margin: 0;
-  background: #000000;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(0, 150, 170, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(0, 120, 140, 0.28) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(0, 90, 110, 0.25) 0%, transparent 55%),
+    linear-gradient(180deg, #020202 0%, #041c22 40%, #03161a 70%, #020202 100%);
+  background-attachment: fixed;
+  background-color: #020202;
   color: var(--foreground);
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
@@ -53,6 +59,7 @@ h6,
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -64,6 +71,7 @@ h6,
       opacity: 0;
       transform: translateX(30px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -75,6 +83,7 @@ h6,
       opacity: 0;
       transform: scale(0.95);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
@@ -82,20 +91,44 @@ h6,
   }
 
   @keyframes mesh {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   @keyframes scrollLeft {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   @keyframes scrollRight {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+    0% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
+}
+
+/* ScrambledText nav spans */
+nav span {
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* Custom Utilities (Tailwind v4 Top-level) */
@@ -108,15 +141,68 @@ h6,
 }
 
 @utility glass-ultra {
-  @apply border border-white/30 bg-black/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-[60px] ring-1 ring-white/20;
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid rgba(0, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+/* Service card hover glow effect */
+.service-card:hover {
+  border-color: rgba(0, 180, 200, 0.4);
+  box-shadow: 0 0 25px rgba(0, 180, 200, 0.25);
+}
+
+/* Stacked scroll card */
+.stacked-card {
+  border: 1px solid rgba(0, 255, 255, 0.12);
+}
+
+.stacked-card:hover {
+  border-color: rgba(0, 180, 200, 0.4);
+  box-shadow: 0 0 25px rgba(0, 180, 200, 0.25);
+}
+
+/* Service scroll card - hidden initially */
+.service-scroll-card {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-scroll-card.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Orbit animation for left side visual */
+@keyframes orbit {
+  from {
+    transform: translate(var(--start-x, 0), var(--start-y, 0)) rotate(0deg);
+  }
+
+  to {
+    transform: translate(var(--start-x, 0), var(--start-y, 0)) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @utility shadow-glow {
-  box-shadow: 0 0 20px rgba(0, 111, 135, 0.3), 0 0 40px rgba(0, 111, 135, 0.1);
+  box-shadow: 0 0 20px rgba(0, 150, 170, 0.4), 0 0 40px rgba(0, 150, 170, 0.2);
 }
 
 @utility glass-card {
-  @apply border border-white/5 bg-white/5 shadow-sm transition-all duration-300 hover:shadow-glow;
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid rgba(0, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 @utility glass-nav {
@@ -127,17 +213,24 @@ h6,
   @apply relative overflow-hidden after:absolute after:inset-0 after:bg-linear-to-tr after:from-white/0 after:via-white/10 after:to-white/0 after:translate-x-[-100%] after:transition-transform after:duration-1000 hover:after:translate-x-[100%];
 }
 
-@utility bg-circuit {
-  background-image: url('file:///C:/Users/User/.gemini/antigravity/brain/4f9404ce-7d06-4798-8b0c-0b0dbe2e411f/hero_circuit_bg_1773093733201.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@utility gradient-overlay {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 150, 170, 0.25) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+@utility gradient-glow {
+  background: radial-gradient(circle, rgba(0, 150, 170, 0.3) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 @utility bg-ultra-mesh {
-  background: radial-gradient(circle at top right, #001f26, #000000 80%),
-              radial-gradient(circle at bottom left, #00151a, #000000 80%);
-  background-color: #000000;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(0, 150, 170, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(0, 120, 140, 0.28) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(0, 90, 110, 0.25) 0%, transparent 55%),
+    linear-gradient(180deg, #020202 0%, #041c22 40%, #03161a 70%, #020202 100%);
+  background-attachment: fixed;
+  background-color: #020202;
 }
 
 @utility animate-fade-in-up {
@@ -160,6 +253,10 @@ h6,
   animation: scrollRight 80s linear infinite;
 }
 
+@utility animate-spin {
+  animation: spin 1s linear infinite;
+}
+
 @utility stagger-1 {
   animation-delay: 0.1s;
 }
@@ -171,4 +268,3 @@ h6,
 @utility stagger-3 {
   animation-delay: 0.3s;
 }
-

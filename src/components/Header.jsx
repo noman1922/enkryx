@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import ScrambledText from "./ScrambledText";
+import GlassBar from "./GlassBar";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -16,7 +18,11 @@ export default function Header() {
 
   return (
     <header className="fixed top-4 left-1/2 z-50 w-[95%] -translate-x-1/2 transition-all duration-300">
-      <div className="glass-nav rounded-2xl px-4 py-3 sm:px-6 lg:px-8">
+      {/* 3D Glass bar canvas — stays behind all nav content */}
+      <div className="absolute inset-0 rounded-2xl overflow-hidden" style={{ pointerEvents: 'none', zIndex: 0 }}>
+        <GlassBar />
+      </div>
+      <div className="relative glass-nav rounded-2xl px-4 py-3 sm:px-6 lg:px-8" style={{ zIndex: 1, background: 'transparent' }}>
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 transition-transform hover:scale-105 active:scale-95">
             <div className="relative h-10 w-32 sm:h-12 sm:w-40">
@@ -37,14 +43,14 @@ export default function Header() {
                   pathname === link.href ? "text-teal" : "text-white/80"
                 }`}
               >
-                {link.name}
+                <ScrambledText>{link.name}</ScrambledText>
               </Link>
             ))}
             <Link
               to="/contact"
               className="rounded-full bg-teal px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-teal/20 transition-all hover:bg-teal-dark hover:scale-105 active:scale-95"
             >
-              Get a Quote
+              <ScrambledText>Get a Quote</ScrambledText>
             </Link>
           </nav>
 
@@ -81,7 +87,7 @@ export default function Header() {
                       : "text-white/80 hover:bg-white/10 hover:text-white"
                   }`}
                 >
-                  {link.name}
+                  <ScrambledText>{link.name}</ScrambledText>
                 </Link>
               ))}
               <div className="px-4 pt-4">
@@ -90,7 +96,7 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                   className="block w-full rounded-xl bg-teal px-3 py-4 text-center text-xl font-bold text-white shadow-lg"
                 >
-                  Get a Quote
+                  <ScrambledText>Get a Quote</ScrambledText>
                 </Link>
               </div>
             </div>
