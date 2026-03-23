@@ -86,7 +86,21 @@
       "summary": "E-commerce platform for electronic accessories and gadgets.",
       "image": "/images/s.png",
       "details": "A modern e-commerce platform developed for selling electronic accessories across Bangladesh. Includes product categorization, promotional campaigns, cart system, secure checkout flow, and order management features. Built for performance, scalability, and high conversion.",
-      "liveUrl": "https://sinogemsbd.com"
+      "liveUrl": "https://sinogemsbd.com",
+      "caseStudy": {
+        "type": "Ecommerce Website",
+        "description": "Full ecommerce platform built from scratch",
+        "built": "Custom UI, product system, cart, checkout and admin panel",
+        "features": [
+          "Product variations",
+          "Responsive design",
+          "Fast filtering",
+          "Admin dashboard",
+          "Order management"
+        ],
+        "tech": ["React", "Tailwind", "Node", "MongoDB"],
+        "live": "https://sinogemsbd.com"
+      }
     },
     {
       "id": "project-2",
@@ -94,7 +108,21 @@
       "summary": "Online animation learning and enrollment platform.",
       "image": "/images/to.png",
       "details": "A digital education platform created for a 2D animation academy. Features course promotion, student enrollment system, authentication, and structured content pages. Designed to simplify admissions and attract new learners.",
-      "liveUrl": "https://toffeetoonsacademy.com"
+      "liveUrl": "https://toffeetoonsacademy.com",
+      "caseStudy": {
+        "type": "Education Platform",
+        "description": "Online learning and enrollment system for a 2D animation academy",
+        "built": "Course promotion pages, student enrollment flow, and scalable database",
+        "features": [
+          "Student Registration",
+          "Responsive design",
+          "Course Showcase",
+          "Admin dashboard",
+          "Secure Admissions"
+        ],
+        "tech": ["React", "Tailwind", "Node", "MongoDB"],
+        "live": "https://toffeetoonsacademy.com"
+      }
     },
     {
       "id": "project-3",
@@ -102,7 +130,21 @@
       "summary": "Issue tracking and support request management platform.",
       "image": "/images/ticket.png",
       "details": "A web based system to manage support tickets, assign tasks and track resolution progress. Built for teams to organize client requests and internal workflow efficiently.",
-      "liveUrl": "https://ticket-management-system-dusky.vercel.app/"
+      "liveUrl": "https://ticket-management-system-dusky.vercel.app/",
+      "caseStudy": {
+        "type": "SaaS Platform",
+        "description": "Internal issue tracking and support request platform",
+        "built": "Ticket assignment system, role-based access, and analytics",
+        "features": [
+          "Task assignment",
+          "Real-time updates",
+          "Role-based Access",
+          "Admin dashboard",
+          "Performance tracking"
+        ],
+        "tech": ["React", "Tailwind", "Firebase", "Node"],
+        "live": "https://ticket-management-system-dusky.vercel.app/"
+      }
     },
     {
       "id": "project-4",
@@ -110,7 +152,21 @@
       "summary": "Premium German streetwear e-commerce store.",
       "image": "/images/n.png",
       "details": "A high-end fashion e-commerce website built for a German streetwear brand. Includes product collections, subscription integration, modern UI styling, and international shopping capability. Focused on branding, aesthetics, and smooth user experience.",
-      "liveUrl": "https://www.nachtgrund.com/"
+      "liveUrl": "https://www.nachtgrund.com/",
+      "caseStudy": {
+        "type": "Ecommerce Website",
+        "description": "Premium streetwear store with modern aesthetic",
+        "built": "Custom storefront, product collections, and checkout",
+        "features": [
+          "High-end UI/UX",
+          "Responsive design",
+          "International shopping",
+          "Admin dashboard",
+          "Order management"
+        ],
+        "tech": ["Shopify", "React", "Tailwind", "Node"],
+        "live": "https://www.nachtgrund.com/"
+      }
     },
     {
       "id": "project-5",
@@ -118,7 +174,21 @@
       "summary": "Sports gear e-commerce platform with custom product features.",
       "image": "/images/le.png",
       "details": "An advanced e-commerce platform for sports equipment and custom gloves. Includes product showcase sections, brand navigation, promotional banners, and custom configuration options. Built for performance, usability, and brand engagement.",
-      "liveUrl": "https://legendsportspro.com/"
+      "liveUrl": "https://legendsportspro.com/",
+      "caseStudy": {
+        "type": "Ecommerce Website",
+        "description": "Full ecommerce platform with custom product configuration",
+        "built": "Custom UI, product system, cart, checkout, and admin panel",
+        "features": [
+          "Custom configurations",
+          "Responsive design",
+          "Fast filtering",
+          "Admin dashboard",
+          "Order management"
+        ],
+        "tech": ["React", "Tailwind", "Node", "MongoDB"],
+        "live": "https://legendsportspro.com/"
+      }
     },
     {
       "id": "project-6",
@@ -126,7 +196,21 @@
       "summary": "Community-driven membership platform.",
       "image": "/images/th.png",
       "details": "A structured community platform designed to connect members globally. Features login system, content pages, membership interaction, and scalable navigation architecture. Built to support engagement and organized content delivery.",
-      "liveUrl": "https://thinksocialism.net/"
+      "liveUrl": "https://thinksocialism.net/",
+      "caseStudy": {
+        "type": "Community Platform",
+        "description": "Structured platform to connect global members",
+        "built": "Login system, content gating, and membership interaction",
+        "features": [
+          "User Authentication",
+          "Responsive design",
+          "Content gating",
+          "Admin dashboard",
+          "Member interaction"
+        ],
+        "tech": ["React", "Tailwind", "Firebase", "Node"],
+        "live": "https://thinksocialism.net/"
+      }
     },
     {
       "id": "project-7",
@@ -134,7 +218,21 @@
       "summary": "Healthcare service company website.",
       "image": "/images/ge.png",
       "details": "A professional healthcare service website designed to build trust and credibility. Highlights services, contact accessibility, and brand identity while maintaining a clean and approachable interface. Built for conversion and clarity.",
-      "liveUrl": "https://gentlejourneyhcllc.com/"
+      "liveUrl": "https://gentlejourneyhcllc.com/",
+      "caseStudy": {
+        "type": "Corporate Website",
+        "description": "Professional healthcare service website built for trust",
+        "built": "Service highlight pages, contact forms, and brand identity sections",
+        "features": [
+          "Service listings",
+          "Responsive design",
+          "Contact Forms",
+          "Accessibility focused",
+          "Fast loading"
+        ],
+        "tech": ["React", "Tailwind", "Next.js"],
+        "live": "https://gentlejourneyhcllc.com/"
+      }
     },
     {
       "id": "project-8",
@@ -142,7 +240,21 @@
       "summary": "Modern e-commerce platform with admin control panel including POS.",
       "image": "/images/ecomstack.png",
       "details": "Full stack e-commerce solution including product management, cart system, order handling and admin dashboard. Designed for scalable online business operations.",
-      "liveUrl": "https://ecom-stack-five.vercel.app/"
+      "liveUrl": "https://ecom-stack-five.vercel.app/",
+      "caseStudy": {
+        "type": "SaaS Platform",
+        "description": "Scalable e-commerce engine with built-in POS",
+        "built": "Admin control panel, product management, and checkout",
+        "features": [
+          "POS System",
+          "Responsive design",
+          "Fast filtering",
+          "Admin dashboard",
+          "Order management"
+        ],
+        "tech": ["React", "Tailwind", "Node", "MongoDB"],
+        "live": "https://ecom-stack-five.vercel.app/"
+      }
     },
     {
       "id": "project-9",
@@ -150,7 +262,21 @@
       "summary": "Ordering, billing and operational management software.",
       "image": "/images/restaurant.png",
       "details": "Handles menu control, orders, billing and daily records through a centralized dashboard to simplify restaurant workflow.",
-      "liveUrl": "#"
+      "liveUrl": "#",
+      "caseStudy": {
+        "type": "SaaS Platform",
+        "description": "Internal workflow management tool for restaurants",
+        "built": "Order processing, billing, and operational dashboards",
+        "features": [
+          "Menu control",
+          "Responsive design",
+          "Billing system",
+          "Admin dashboard",
+          "Order tracking"
+        ],
+        "tech": ["React", "Tailwind", "Node", "PostgreSQL"],
+        "live": "#"
+      }
     },
     {
       "id": "project-10",
@@ -158,7 +284,21 @@
       "summary": "Modern e-commerce platform for pet products.",
       "image": "/images/p.png",
       "details": "A responsive e-commerce platform built for selling premium pet products. Includes product listings, shopping cart system, user authentication, and promotional hero sections. Designed with a friendly UI and smooth browsing experience for pet owners.",
-      "liveUrl": "https://eloquent-gnome-9281de.netlify.app/"
+      "liveUrl": "https://eloquent-gnome-9281de.netlify.app/",
+      "caseStudy": {
+        "type": "Ecommerce Website",
+        "description": "Full ecommerce platform tailored for pet stores",
+        "built": "Custom UI, product system, cart, checkout and admin panel",
+        "features": [
+          "Product variations",
+          "Responsive design",
+          "Fast filtering",
+          "Admin dashboard",
+          "Order management"
+        ],
+        "tech": ["React", "Tailwind", "Node", "MongoDB"],
+        "live": "https://eloquent-gnome-9281de.netlify.app/"
+      }
     },
     {
       "id": "project-11",
@@ -166,7 +306,21 @@
       "summary": "Community-based blood donation management platform.",
       "image": "/images/b.png",
       "details": "A web platform designed to connect blood donors with recipients. Features donor registration, blood request system, authentication, and awareness content sections. Built to support real-time community engagement and structured data management.",
-      "liveUrl": "https://unique-bublanina-9b3ac2.netlify.app/"
+      "liveUrl": "https://unique-bublanina-9b3ac2.netlify.app/",
+      "caseStudy": {
+        "type": "Community Platform",
+        "description": "Blood donor and recipient connection system",
+        "built": "Registration flow, request board, and matching system",
+        "features": [
+          "Donor matching",
+          "Responsive design",
+          "Request board",
+          "Admin dashboard",
+          "Secure auth"
+        ],
+        "tech": ["React", "Tailwind", "Node", "MongoDB"],
+        "live": "https://unique-bublanina-9b3ac2.netlify.app/"
+      }
     }
   ],
   "testimonials": [
