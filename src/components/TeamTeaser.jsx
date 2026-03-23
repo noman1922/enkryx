@@ -4,7 +4,7 @@ import { Facebook, Linkedin, Github, Globe } from "lucide-react";
 
 export default function TeamTeaser() {
   return (
-    <section className="relative overflow-hidden py-24 sm:py-32">
+    <section className="relative overflow-hidden pt-12 pb-24 sm:pt-16 sm:pb-32">
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center animate-fade-in-up">
           <h2 className="text-3xl font-bold uppercase tracking-tighter text-white sm:text-5xl italic">Meet the team</h2>
