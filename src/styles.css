@@ -26,12 +26,12 @@
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 15% 25%, rgba(0, 150, 170, 0.35) 0%, transparent 45%),
-    radial-gradient(circle at 85% 75%, rgba(0, 120, 140, 0.28) 0%, transparent 50%),
-    radial-gradient(circle at 50% 0%, rgba(0, 90, 110, 0.25) 0%, transparent 55%),
-    linear-gradient(180deg, #020202 0%, #041c22 40%, #03161a 70%, #020202 100%);
+    radial-gradient(circle at 15% 25%, rgba(0, 150, 170, 0.38) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(0, 120, 140, 0.32) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(0, 90, 110, 0.28) 0%, transparent 55%),
+    linear-gradient(180deg, #061016 0%, #092832 40%, #071f28 70%, #061016 100%);
   background-attachment: fixed;
-  background-color: #020202;
+  background-color: #061016;
   color: var(--foreground);
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
@@ -225,12 +225,12 @@ nav span {
 
 @utility bg-ultra-mesh {
   background:
-    radial-gradient(circle at 15% 25%, rgba(0, 150, 170, 0.35) 0%, transparent 45%),
-    radial-gradient(circle at 85% 75%, rgba(0, 120, 140, 0.28) 0%, transparent 50%),
-    radial-gradient(circle at 50% 0%, rgba(0, 90, 110, 0.25) 0%, transparent 55%),
-    linear-gradient(180deg, #020202 0%, #041c22 40%, #03161a 70%, #020202 100%);
+    radial-gradient(circle at 15% 25%, rgba(0, 150, 170, 0.38) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(0, 120, 140, 0.32) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(0, 90, 110, 0.28) 0%, transparent 55%),
+    linear-gradient(180deg, #061016 0%, #092832 40%, #071f28 70%, #061016 100%);
   background-attachment: fixed;
-  background-color: #020202;
+  background-color: #061016;
 }
 
 @utility animate-fade-in-up {

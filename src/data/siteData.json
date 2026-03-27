@@ -4,29 +4,61 @@
       "id": "custom-web",
       "title": "Custom Web Development",
       "problem": "Generic websites fail to convert visitors into customers.",
-      "solution": "We build high-performance custom websites fully tailored to your business needs. Conversion-focused, scalable, and built with modern frameworks to ensure your brand stands out.",
-      "icon": "globe"
+      "solution": "We build high-performance custom websites fully tailored to your business needs.",
+      "description": "Our custom web development service focuses on creating unique, scalable, and conversion-optimized websites. We use modern frameworks to ensure your brand stands out with high performance and seamless user experiences.",
+      "icon": "globe",
+      "features": [
+        "Unique User Experience Design",
+        "High-Performance Optimization",
+        "Scalable Architecture",
+        "SEO-Friendly Structure",
+        "Conversion-Focused Layouts"
+      ]
     },
     {
       "id": "saas-dev",
       "title": "SaaS Product Development",
       "problem": "Manual processes and disjointed tools cap your growth potential.",
-      "solution": "End-to-end SaaS platforms with secure cloud-based solutions. We build admin dashboards, user roles, and subscription systems that scale as your user base grows.",
-      "icon": "layers"
+      "solution": "End-to-end SaaS platforms with secure cloud-based solutions.",
+      "description": "We specialize in building sophisticated SaaS platforms with robust admin dashboards, flexible user roles, and secure subscription systems. Our solutions are designed to scale seamlessly as your user base grows.",
+      "icon": "layers",
+      "features": [
+        "Admin Control Panels",
+        "Role-Based Access Control",
+        "Subscription & Billing Integration",
+        "Secure Data Management",
+        "API Development & Integration"
+      ]
     },
     {
       "id": "wordpress-sol",
       "title": "WordPress Solutions",
       "problem": "Clunky, slow sites make management a nightmare and kill SEO.",
-      "solution": "Custom WordPress websites with professional theme customization and plugin development. Easy to manage, SEO optimized, and built for long-term reliability.",
-      "icon": "layout"
+      "solution": "Custom WordPress websites with professional theme customization.",
+      "description": "We deliver professional WordPress solutions that are easy to manage and highly optimized for SEO. From custom theme development to complex plugin integrations, we ensure your site is reliable and fast.",
+      "icon": "layout",
+      "features": [
+        "Custom Theme Development",
+        "Advanced Plugin Integration",
+        "SEO Optimization",
+        "Speed & Performance Tuning",
+        "Content Management Training"
+      ]
     },
     {
       "id": "mobile-app",
       "title": "Mobile App Development",
       "problem": "Being desktop-only means missing over half of your potential market.",
-      "solution": "Cross-platform apps (Android & iOS) that deliver high performance and clean UI. From business apps to SaaS mobile versions, we keep your business in your customers' pockets.",
-      "icon": "smartphone"
+      "solution": "Cross-platform apps (Android & iOS) that deliver high performance.",
+      "description": "We build high-performance cross-platform mobile applications that provide a native feel on both Android and iOS. Whether it's a standalone business tool or a mobile extension of your SaaS, we keep your business accessible everywhere.",
+      "icon": "smartphone",
+      "features": [
+        "Cross-Platform Compatibility",
+        "Intelligent UI/UX Design",
+        "Offline Capabilities",
+        "Push Notification Systems",
+        "App Store Submission Support"
+      ]
     }
   ],
   "team": [
