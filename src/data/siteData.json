@@ -188,5 +188,76 @@
       "company": "Nachtgrund",
       "image": "/images/3.png"
     }
-  ]
+  ],
+  "programs": {
+    "hero": {
+      "title": "ENKRYX Youth Development Program",
+      "subtitle": "Empowering the next generation of tech innovators through real-world experience"
+    },
+    "about": {
+      "description": "This program is designed for students and beginners who want real industry experience before graduation. ENKRYX provides hands-on training, mentorship, and live project exposure.",
+      "image": "/images/programs/youth-program.jpg"
+    },
+    "learning": [
+      {
+        "title": "Real Client Project Experience",
+        "icon": "Briefcase"
+      },
+      {
+        "title": "Web Development Fundamentals",
+        "icon": "Code"
+      },
+      {
+        "title": "Team Collaboration & Workflow",
+        "icon": "Users"
+      },
+      {
+        "title": "Lead Generation & Communication",
+        "icon": "MessageSquare"
+      },
+      {
+        "title": "Problem Solving & Industry Thinking",
+        "icon": "Lightbulb"
+      }
+    ],
+    "benefits": [
+      "Hands-on Experience",
+      "Mentorship from Experts",
+      "Certificate of Completion",
+      "Opportunity to Join ENKRYX Team",
+      "Career Guidance"
+    ],
+    "requirements": [
+      "University students (especially 1st–2nd year)",
+      "Basic knowledge of programming or interest in tech",
+      "Passion to learn and grow"
+    ],
+    "structure": [
+      {
+        "step": 1,
+        "title": "Application",
+        "description": "Submit your interest via our online form."
+      },
+      {
+        "step": 2,
+        "title": "Selection",
+        "description": "Shortlisted candidates are interviewed for the program."
+      },
+      {
+        "step": 3,
+        "title": "Training Phase",
+        "description": "Intensive hands-on training on modern stack."
+      },
+      {
+        "step": 4,
+        "title": "Real Project Work",
+        "description": "Contribute to live client projects under mentorship."
+      },
+      {
+        "step": 5,
+        "title": "Evaluation & Certification",
+        "description": "Final review and certificate distribution."
+      }
+    ]
+  }
 }
